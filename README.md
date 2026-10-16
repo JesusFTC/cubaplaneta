@@ -8,7 +8,7 @@ Página web educativa sobre el **reciclaje**, creada como proyecto escolar del *
 
 ---
 
-## 🎯 Propósito del proyecto
+##  Propósito del proyecto
 
 **Guardianes del Cubaplaneta** es un movimiento escolar que busca que los compañeros del plantel comprendan por qué el reciclaje es importante y se animen a practicarlo en su día a día.
 
@@ -22,7 +22,7 @@ El sitio responde, de forma clara y visual, a preguntas como:
 
 La meta final es invitar a cada visitante a convertirse en un "guardián" del planeta con compromisos sencillos y posibles de cumplir dentro del plantel.
 
-## 📚 Contenido de la página
+##  Contenido de la página
 
 1. **Inicio:** presentación del movimiento y las 5 R de los guardianes (Rechazar, Reducir, Reutilizar, Reparar, Reciclar).
 2. **¿Qué es el reciclaje?:** definición sencilla y un ejemplo cotidiano.
@@ -35,15 +35,14 @@ La meta final es invitar a cada visitante a convertirse en un "guardián" del pl
 9. **Mini quiz:** preguntas interactivas con la mascota Cuby.
 10. **Únete a los Guardianes:** compromisos para sumarse al movimiento.
 
-## 🛠️ Tecnologías
+## Hecho con
 
-- **HTML5, CSS3 y JavaScript** en un solo archivo (`index.html`), sin frameworks.
+- **HTML5, CSS3 y JavaScript** 
 - **Google Fonts:** Instrument Serif y Barlow.
 - Diseño oscuro con efecto *glass* (vidrio), video de fondo, animaciones al hacer scroll y contadores animados.
 - Diseño adaptable (responsive) para computadora y celular.
-- Publicado con **GitHub** y **Netlify**.
 
-## 📁 Estructura del repositorio
+##  Estructura del repositorio
 
 ```
 ├── index.html        # Página completa (estructura, estilos y scripts)
@@ -51,20 +50,6 @@ La meta final es invitar a cada visitante a convertirse en un "guardián" del pl
 ├── img/              # Fotografías de las secciones
 └── README.md
 ```
-
-## 💻 Cómo verla en tu computadora
-
-1. Descarga o clona este repositorio:
-   ```
-   git clone https://github.com/JesusFTC/cubaplaneta.git
-   ```
-2. Abre la carpeta y haz doble clic en `index.html`.
-
-> Mantén `index.html`, `vegetacion.mp4` y la carpeta `img` juntos; si falta alguno, la página se verá incompleta.
-
-## 📌 Fuentes de datos
-
-Las cifras de degradación son aproximadas y varían según la fuente. Referencias sugeridas: National Geographic, EPA y Greenpeace.
 
 ---
 
