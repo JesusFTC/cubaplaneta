@@ -586,6 +586,11 @@
             gap: 1rem;
         }
 
+        .material-card .img-frame {
+            min-height: 0;
+            flex-shrink: 0;
+        }
+
         .color-dot {
             width: 40px;
             height: 40px;
@@ -903,6 +908,67 @@
             .music-label { display: none; }
         }
 
+        /* --- Enter Screen (desbloquea el audio) --- */
+        .enter-screen {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            text-align: center;
+            background:
+                radial-gradient(circle at 50% 40%, rgba(46, 252, 155, 0.12) 0%, transparent 60%),
+                var(--bg-deep);
+            opacity: 1;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+
+        .enter-video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .enter-overlay {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at center, rgba(2, 10, 8, 0.35) 0%, rgba(2, 10, 8, 0.85) 100%),
+                linear-gradient(to bottom, rgba(2, 10, 8, 0.6) 0%, transparent 25%, transparent 75%, rgba(2, 10, 8, 0.8) 100%);
+            z-index: -1;
+        }
+
+        .enter-screen.hide {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .enter-screen .hero-title {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            margin-bottom: 0;
+        }
+
+        .enter-screen p {
+            color: var(--text-muted);
+            font-weight: 300;
+            max-width: 420px;
+        }
+
+        .enter-btn {
+            font-family: var(--sans);
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 0.5rem;
+        }
+
         /* --- Responsive --- */
         @media (max-width: 768px) {
             .nav-pill { display: none; }
@@ -1002,7 +1068,6 @@
         <div class="three-r-grid">
             <div class="glass-card r-card">
                 <div class="card-header-pill">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12h-4l-3 9L9 3l-3 9H2"></path></svg>
                     <span>Reducir</span>
                 </div>
                 <div class="img-frame" style="height: 200px;">
@@ -1013,7 +1078,6 @@
             </div>
             <div class="glass-card r-card">
                 <div class="card-header-pill">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4v5h.582m15.34 0H20v-5m-7 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v5"></path></svg>
                     <span>Reutilizar</span>
                 </div>
                 <div class="img-frame" style="height: 200px;">
@@ -1024,7 +1088,6 @@
             </div>
             <div class="glass-card r-card">
                 <div class="card-header-pill">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"></path><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path></svg>
                     <span>Reciclar</span>
                 </div>
                 <div class="img-frame" style="height: 200px;">
@@ -1125,7 +1188,6 @@
         <div class="materials-grid">
             <div class="glass-card material-card">
                 <div class="card-header-pill">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
                     <span>Papel</span>
                 </div>
                 <div class="img-frame" style="width: 100px; height: 100px; border-color: #3b82f6;">
@@ -1136,7 +1198,6 @@
             </div>
             <div class="glass-card material-card">
                 <div class="card-header-pill">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>
                     <span>Plástico</span>
                 </div>
                 <div class="img-frame" style="width: 100px; height: 100px; border-color: #eab308;">
@@ -1147,7 +1208,6 @@
             </div>
             <div class="glass-card material-card">
                 <div class="card-header-pill">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
                     <span>Vidrio</span>
                 </div>
                 <div class="img-frame" style="width: 100px; height: 100px; border-color: #16a34a;">
@@ -1158,7 +1218,6 @@
             </div>
             <div class="glass-card material-card">
                 <div class="card-header-pill">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
                     <span>Metal</span>
                 </div>
                 <div class="img-frame" style="width: 100px; height: 100px; border-color: #94a3b8;">
@@ -1169,7 +1228,6 @@
             </div>
             <div class="glass-card material-card">
                 <div class="card-header-pill">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path></svg>
                     <span>Orgánicos</span>
                 </div>
                 <div class="img-frame" style="width: 100px; height: 100px; border-color: #78350f;">
@@ -1325,6 +1383,19 @@
             </div>
         </div>
     </footer>
+
+    <!-- Enter Screen -->
+    <div class="enter-screen" id="enter-screen" role="dialog" aria-label="Pantalla de bienvenida">
+        <video class="enter-video" id="enter-video" autoplay muted loop playsinline preload="auto">
+            <source src="media/videoinicio.mp4" type="video/mp4">
+        </video>
+        <div class="enter-overlay"></div>
+        <div class="hero-badge">Un movimiento del CBTis 159</div>
+        <h1 class="hero-title">Guardianes del <br>Cubaplaneta</h1>
+        <p>Esta página incluye música de fondo. Puedes pausarla cuando quieras con el botón de la esquina.</p>
+        <button class="btn-primary enter-btn" id="enter-btn" type="button">Entrar ↗</button>
+    </div>
+    <noscript><style>.enter-screen { display: none; }</style></noscript>
 
     <!-- Background Music -->
     <audio id="bg-music" loop preload="auto">
@@ -1622,18 +1693,49 @@
 
             // Los navegadores bloquean el audio automático: se intenta al cargar
             // y, si falla, arranca con la primera interacción de la persona.
-            const unlockEvents = ['pointerdown', 'keydown', 'touchstart', 'wheel'];
+            const unlockEvents = ['click', 'pointerup', 'keydown', 'touchend'];
             function unlock() {
                 if (userPaused) return;
                 play().then(() => {
                     if (!music.paused) {
                         unlockEvents.forEach(ev => window.removeEventListener(ev, unlock));
+                        hideEnterScreen();
                     }
                 });
             }
             unlockEvents.forEach(ev => window.addEventListener(ev, unlock, { passive: true }));
 
-            play();
+            // Pantalla de bienvenida: el clic en "Entrar" autoriza el audio
+            const enterScreen = document.getElementById('enter-screen');
+            const enterBtn = document.getElementById('enter-btn');
+
+            function hideEnterScreen() {
+                if (!enterScreen || enterScreen.dataset.closed) return;
+                enterScreen.dataset.closed = '1';
+                enterScreen.classList.add('hide');
+                document.body.style.overflow = '';
+                setTimeout(() => {
+                    enterScreen.style.display = 'none';
+                    const enterVideo = document.getElementById('enter-video');
+                    if (enterVideo) enterVideo.pause();
+                }, 700);
+            }
+
+            if (enterScreen) {
+                document.body.style.overflow = 'hidden';
+                if (enterBtn) {
+                    enterBtn.focus();
+                    enterBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        userPaused = false;
+                        play();
+                        hideEnterScreen();
+                    });
+                }
+            }
+
+            // Si el navegador ya permite audio automático, se omite la pantalla
+            music.play().then(() => { setUI(true); hideEnterScreen(); }).catch(() => setUI(false));
 
             toggle.addEventListener('click', (e) => {
                 e.stopPropagation();

@@ -4,7 +4,7 @@
 
 Página web educativa sobre el **reciclaje**, creada como proyecto escolar del **CBTis 159** para la materia de **Programación** (5to Sección B).
 
-🔗 **Sitio en vivo:** [https://cubaplaneta.netlify.app](https://cubaplaneta.netlify.app/#inicio)
+🔗 **Sitio en vivo:** [cubaplaneta](https://jesusftc.github.io/cubaplaneta/)
 
 ---
 
