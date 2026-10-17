@@ -767,7 +767,7 @@
             overflow: hidden;
         }
 
-        .final-video {
+        .final-image {
             position: absolute;
             top: 0;
             left: 0;
@@ -1413,9 +1413,7 @@
     </section>
 
     <section id="unete" class="final-section">
-        <video class="final-video" id="video-final" muted loop playsinline preload="metadata" poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfKfDzAAAADUlEQVR42mN8/+8BAAMDAAEEF9sAAQQAAA==">
-            <source src="media/vegetacion.mp4" type="video/mp4">
-        </video>
+        <img class="final-image" src="img/finalimage.jpg" alt="" loading="lazy" decoding="async">
         <div class="final-overlay"></div>
 
         <div class="container reveal">
@@ -1479,7 +1477,6 @@
     <script>
         // --- Performance: Video Management ---
         const videoHero = document.getElementById('video-hero');
-        const videoFinal = document.getElementById('video-final');
 
         const particleBox = document.getElementById('particle-container');
         const enterScreenEl = document.getElementById('enter-screen');
@@ -1505,7 +1502,7 @@
 
         // Se llama al cerrar la bienvenida para arrancar los videos que ya están a la vista
         function syncVideos() {
-            [videoHero, videoFinal].forEach(video => {
+            [videoHero].forEach(video => {
                 const r = video.getBoundingClientRect();
                 const visible = r.bottom > 0 && r.top < window.innerHeight;
                 if (visible && !enterScreenOpen()) {
@@ -1517,7 +1514,6 @@
         }
 
         videoObserver.observe(videoHero);
-        videoObserver.observe(videoFinal);
 
         // --- Particles Background ---
         function createParticles() {
