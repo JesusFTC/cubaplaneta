@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardianes del Cubaplaneta | CBTis 159</title>
+    <link rel="icon" type="image/png" href="img/icon-head.png">
+    <link rel="apple-touch-icon" href="img/icon-head.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body-root">
+
+    <header>
+        <div class="nav-wrapper">
+            <a href="#inicio" class="logo-container" id="logo-home">
+                Guardianes del <span class="logo-accent">Cubaplaneta</span>
+            </a>
+            <nav class="nav-pill" id="nav-pill">
+                <div class="nav-indicator" id="nav-indicator"></div>
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#que-es" class="nav-link">¿Qué es?</a>
+                <a href="#beneficios" class="nav-link">Beneficios</a>
+                <a href="#reciclar" class="nav-link">Cómo reciclar</a>
+                <a href="#quiz" class="nav-link">Quiz</a>
+                <a href="#unete" class="btn-join-nav">Únete ↗</a>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-pill">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-fallback" id="particle-container"></div>
+        <video class="hero-video" id="video-hero" muted loop playsinline preload="metadata" poster="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfKfDzAAAADUlEQVR42mN8/+8BAAMDAAEEF9sAAQQAAA==">
+            <source src="media/vegetacion.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">Un movimiento del CBTis 159</div>
+            <h1 class="hero-title">Guardianes del <br>Cubaplaneta</h1>
+            <p class="hero-subtitle">"Transformando el presente, protegiendo el futuro." <br>Un espacio para aprender, actuar y salvar nuestro hogar.</p>
+
+            <div class="hero-btns">
+                <a href="#unete" class="btn-primary">Únete al movimiento ↗</a>
+                <a href="#que-es" class="btn-secondary">Aprende a reciclar ▶</a>
+            </div>
+
+            <div class="hero-footer-pill">
+                <span class="pill-label">Las 5 R de los guardianes</span>
+                <div class="pill-words serif-italic">
+                    <span>Rechazar</span>
+                    <span>Reducir</span>
+                    <span>Reutilizar</span>
+                    <span>Reparar</span>
+                    <span>Reciclar</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="glow-bg" style="top: 10%; left: -10%;"></div>
+    <div class="glow-bg" style="bottom: 20%; right: -10%;"></div>
+
+    <section id="que-es" class="container reveal">
+        <div class="section-divider"></div>
+        <h2 class="section-title">¿Qué es el Reciclaje?</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <h3 class="card-title">El arte de dar nueva vida.</h3>
+                <p>El reciclaje es el proceso de recolectar y transformar materiales que ya no utilizamos en nuevos productos. No es solo "tirar la basura en el bote correcto", es evitar que los recursos naturales se agoten.</p>
+                <br>
+                <p><strong>Ejemplo cotidiano:</strong> En lugar de tirar una botella de plástico que tardaría 450 años en desaparecer, la reciclamos para que se convierta en fibras para ropa deportiva o nuevos envases.</p>
+            </div>
+            <div class="img-frame">
+                <img src="img/que-es.jpg" alt="Ejemplo de reciclaje de plástico" loading="lazy" decoding="async">
+                <div class="img-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container reveal">
+        <div class="section-divider"></div>
+        <h2 class="section-title">Las 3 R fundamentales</h2>
+        <div class="three-r-grid">
+            <div class="glass-card r-card">
+                <div class="card-header-pill">
+                    <span>Reducir</span>
+                </div>
+                <div class="img-frame" style="height: 200px;">
+                    <img src="img/reducir.jpg" alt="Reducir consumo" loading="lazy" decoding="async">
+                </div>
+                <h3 class="card-title">Reducir</h3>
+                <p>Consumir menos. Evitar comprar cosas que no necesitamos y reducir el uso de plásticos de un solo uso.</p>
+            </div>
+            <div class="glass-card r-card">
+                <div class="card-header-pill">
+                    <span>Reutilizar</span>
+                </div>
+                <div class="img-frame" style="height: 200px;">
+                    <img src="img/reutilizar.jpg" alt="Reutilizar objetos" loading="lazy" decoding="async">
+                </div>
+                <h3 class="card-title">Reutilizar</h3>
+                <p>Darle una segunda oportunidad a los objetos. Usar frascos de vidrio para guardar especias o ropa vieja como trapos.</p>
+            </div>
+            <div class="glass-card r-card">
+                <div class="card-header-pill">
+                    <span>Reciclar</span>
+                </div>
+                <div class="img-frame" style="height: 200px;">
+                    <img src="img/reciclar.jpg" alt="Reciclar materiales" loading="lazy" decoding="async">
+                </div>
+                <h3 class="card-title">Reciclar</h3>
+                <p>Separar los materiales para que puedan ser procesados industrialmente y vuelvan a ser materia prima.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="para-que" class="container reveal">
+        <div class="section-divider"></div>
+        <h2 class="section-title">¿Para qué sirve?</h2>
+        <div class="purpose-list">
+            <div class="glass-card purpose-item">
+                <div class="card-header-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+                    <span>Basura</span>
+                </div>
+                <div class="img-frame" style="height: 180px;">
+                    <img src="img/basura.jpg" alt="Contaminación por basura" loading="lazy" decoding="async">
+                </div>
+                <h3 class="card-title">Combate la Basura</h3>
+                <p>Reduce la cantidad de desechos que llegan a los vertederos y evita que los plásticos terminen en los océanos matando la fauna marina.</p>
+            </div>
+            <div class="glass-card purpose-item">
+                <div class="card-header-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                    <span>Energía</span>
+                </div>
+                <div class="img-frame" style="height: 180px;">
+                    <img src="img/energia.jpg" alt="Ahorro de energía" loading="lazy" decoding="async">
+                </div>
+                <h3 class="card-title">Ahorra Energía</h3>
+                <p>Fabricar un producto desde cero consume mucha más energía que procesar material reciclado (como el aluminio).</p>
+            </div>
+            <div class="glass-card purpose-item">
+                <div class="card-header-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5"></path></svg>
+                    <span>Recursos</span>
+                </div>
+                <div class="img-frame" style="height: 180px;">
+                    <img src="img/recursos.jpg" alt="Recursos naturales" loading="lazy" decoding="async">
+                </div>
+                <h3 class="card-title">Protege Recursos</h3>
+                <p>Evita la deforestación al reciclar papel y la minería destructiva al recuperar metales preciosos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="container reveal">
+        <div class="section-divider"></div>
+        <h2 class="section-title">¿En qué nos beneficia?</h2>
+        <div class="benefits-grid">
+            <div class="glass-card benefit-card">
+                <div class="card-header-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"></path></svg>
+                    <span>Ambiente</span>
+                </div>
+                <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M4 12h16"></path></svg>
+                <h4 class="card-title" style="font-size: 1.4rem;">Medio Ambiente</h4>
+                <p>Aire más limpio, suelos más fértiles y ecosistemas equilibrados.</p>
+            </div>
+            <div class="glass-card benefit-card">
+                <div class="card-header-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                    <span>Economía</span>
+                </div>
+                <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                <h4 class="card-title" style="font-size: 1.4rem;">Economía</h4>
+                <p>Crea empleos verdes y reduce costos de producción para las empresas.</p>
+            </div>
+            <div class="glass-card benefit-card">
+                <div class="card-header-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                    <span>Salud</span>
+                </div>
+                <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                <h4 class="card-title" style="font-size: 1.4rem;">Salud</h4>
+                <p>Menos quema de basura significa menos enfermedades respiratorias para todos.</p>
+            </div>
+            <div class="glass-card benefit-card">
+                <div class="card-header-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    <span>Comunidad</span>
+                </div>
+                <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <h4 class="card-title" style="font-size: 1.4rem;">Comunidad</h4>
+                <p>Nos une como ciudadanos responsables y conscientes del entorno.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container reveal">
+        <div class="section-divider"></div>
+        <h2 class="section-title">Materiales que Reciclamos</h2>
+        <div class="materials-grid">
+            <div class="glass-card material-card">
+                <div class="card-header-pill">
+                    <span>Papel</span>
+                </div>
+                <div class="img-frame" style="width: 100px; height: 100px; border-color: #3b82f6;">
+                    <img src="img/papel.jpg" alt="Papel y cartón" loading="lazy" decoding="async">
+                </div>
+                <strong style="color: #3b82f6;">Papel y Cartón</strong>
+                <p>Contenedor Azul</p>
+            </div>
+            <div class="glass-card material-card">
+                <div class="card-header-pill">
+                    <span>Plástico</span>
+                </div>
+                <div class="img-frame" style="width: 100px; height: 100px; border-color: #eab308;">
+                    <img src="img/plastico.jpg" alt="Plásticos" loading="lazy" decoding="async">
+                </div>
+                <strong style="color: #eab308;">Plásticos</strong>
+                <p>Contenedor Amarillo</p>
+            </div>
+            <div class="glass-card material-card">
+                <div class="card-header-pill">
+                    <span>Vidrio</span>
+                </div>
+                <div class="img-frame" style="width: 100px; height: 100px; border-color: #16a34a;">
+                    <img src="img/vidrio.jpg" alt="Vidrio" loading="lazy" decoding="async">
+                </div>
+                <strong style="color: #16a34a;">Vidrio</strong>
+                <p>Contenedor Verde</p>
+            </div>
+            <div class="glass-card material-card">
+                <div class="card-header-pill">
+                    <span>Metal</span>
+                </div>
+                <div class="img-frame" style="width: 100px; height: 100px; border-color: #94a3b8;">
+                    <img src="img/metal.jpg" alt="Metales" loading="lazy" decoding="async">
+                </div>
+                <strong style="color: #94a3b8;">Metales</strong>
+                <p>Contenedor Gris</p>
+            </div>
+            <div class="glass-card material-card">
+                <div class="card-header-pill">
+                    <span>Orgánicos</span>
+                </div>
+                <div class="img-frame" style="width: 100px; height: 100px; border-color: #78350f;">
+                    <img src="img/organicos.jpg" alt="Orgánicos" loading="lazy" decoding="async">
+                </div>
+                <strong style="color: #78350f;">Orgánicos</strong>
+                <p>Contenedor Café</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container reveal">
+        <div class="section-divider"></div>
+        <h2 class="section-title">Datos Curiosos</h2>
+        <div class="curiosities-grid">
+            <div class="curiosity-item glass-card">
+                <div class="curiosity-bg img-frame">
+                    <img src="img/dato-botella.jpg" alt="Plástico" loading="lazy" decoding="async">
+                </div>
+                <h2 class="counter" data-target="450">0</h2>
+                <p>Años que tarda una <strong>botella de plástico</strong> en degradarse.</p>
+            </div>
+            <div class="curiosity-item glass-card">
+                <div class="curiosity-bg img-frame">
+                    <img src="img/dato-lata.jpg" alt="Aluminio" loading="lazy" decoding="async">
+                </div>
+                <h2 class="counter" data-target="100">0</h2>
+                <p>Años que tarda una <strong>lata de aluminio</strong> en desaparecer <br><small>(Rango común: 80 - 200 años)</small></p>
+            </div>
+            <div class="curiosity-item glass-card">
+                <div class="curiosity-bg img-frame">
+                    <img src="img/dato-vidrio.jpg" alt="Vidrio" loading="lazy" decoding="async">
+                </div>
+                <h2 class="counter" data-target="4000">0</h2>
+                <p>Años que tarda el <strong>vidrio</strong> en degradarse (¡puede ser eterno!).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reciclar" class="container reveal">
+        <div class="section-divider"></div>
+        <h2 class="section-title">¿Cómo reciclo hoy?</h2>
+        <p class="section-subtitle">Consejos prácticos para integrar el reciclaje en tu rutina diaria.</p>
+        <div class="tips-grid">
+            <div class="liquid-glass reveal">
+                <div class="card-header-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    <span>En mi casa</span>
+                </div>
+                <div class="img-frame" style="height: 200px; border-radius: 20px;">
+                    <img src="img/casa.jpg" alt="Reciclaje en casa" loading="lazy" decoding="async">
+                </div>
+                <div class="tips-group">
+                    <ul class="tips-list">
+                        <li>Limpia y seca los envases antes de tirarlos.</li>
+                        <li>Crea un pequeño centro de acopio con cajas.</li>
+                        <li>Composta los restos de fruta y verdura.</li>
+                        <li>Evita comprar agua embotellada, usa filtros.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="liquid-glass reveal">
+                <div class="card-header-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                    <span>En mi escuela</span>
+                </div>
+                <div class="img-frame" style="height: 200px; border-radius: 20px;">
+                    <img src="img/escuela.jpg" alt="Reciclaje en el CBTis" loading="lazy" decoding="async">
+                </div>
+                <div class="tips-group">
+                    <ul class="tips-list">
+                        <li>Usa los contenedores correctos del plantel.</li>
+                        <li>Evita imprimir hojas que puedan ser digitales.</li>
+                        <li>Lleva tu propio termo y recipiente de comida.</li>
+                        <li>Organiza brigadas de limpieza con tus compañeros.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" class="container reveal">
+        <div class="section-divider"></div>
+        <h2 class="section-title">Mini Quiz de Guardianes</h2>
+        <div class="glass-card quiz-container">
+            <div class="quiz-progress">
+                <div class="quiz-progress-top">
+                    <span id="quiz-step">Pregunta 1 de 5</span>
+                    <span id="quiz-score">Aciertos: 0</span>
+                </div>
+                <div class="quiz-bar" id="quiz-bar"></div>
+            </div>
+            <div id="cuby-container" class="cuby-mascot">
+                <svg viewBox="0 0 100 100" id="cuby-svg">
+                    <path d="M30 30L50 15L70 30L70 70L50 85L30 70Z" fill="url(#cuby-grad)" stroke="#000" stroke-width="2"/>
+                    <path d="M30 30L50 45L70 30M50 45V85M30 70L50 85L70 70" stroke="#000" stroke-width="1" opacity="0.3"/>
+                    <g id="cuby-eyes">
+                        <circle cx="40" cy="45" r="4" fill="#000" class="eye"/>
+                        <circle cx="60" cy="45" r="4" fill="#000" class="eye"/>
+                    </g>
+                    <path id="cuby-mouth" d="M45 60Q50 65 55 60" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <defs>
+                        <linearGradient id="cuby-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#2efc9b" />
+                            <stop offset="100%" stop-color="#00f2ff" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div id="quiz-game">
+                <div class="quiz-question" id="question">Cargando pregunta...</div>
+                <div class="quiz-options" id="options"></div>
+                <div class="quiz-feedback" id="quiz-feedback" aria-live="polite"></div>
+            </div>
+            <div id="quiz-result" class="quiz-result">
+                <div class="score-big"><span id="score-num">0</span><span class="score-total" id="score-total">/5</span></div>
+                <h3 id="score-text">¡Buen trabajo!</h3>
+                <p id="score-detail" style="margin-bottom: 2rem;"></p>
+                <button class="btn-primary" style="margin: 0 auto;" onclick="restartQuiz()">Reintentar Quiz</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="unete" class="final-section">
+        <img class="final-image" src="img/finalimage.jpg" alt="" loading="lazy" decoding="async">
+        <div class="final-overlay"></div>
+
+        <div class="container reveal">
+            <h2 class="section-title">Únete a los Guardianes</h2>
+            <p class="hero-subtitle" style="margin-bottom: 3rem;">Para salvar el planeta, no necesitamos a una persona haciéndolo perfecto, sino a miles haciéndolo imperfectamente.</p>
+
+            <div class="commitments-grid">
+                <div class="glass-card commitment-card">Separar la basura en el plantel.</div>
+                <div class="glass-card commitment-card">Traer mi propio termo y botella.</div>
+                <div class="glass-card commitment-card">Reutilizar hojas de cuaderno.</div>
+                <div class="glass-card commitment-card">Evitar el uso de popotes y unicel.</div>
+                <div class="glass-card commitment-card">Invitar a un amigo a reciclar.</div>
+            </div>
+
+            <div class="team-gallery" id="team-gallery">
+                <!-- Rendered by JS -->
+            </div>
+
+            <h3 class="serif-italic" style="font-size: 2rem; margin-top: 3rem;">¡El Cubaplaneta cuenta contigo!</h3>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Un movimiento del CBTis 159</p>
+            <div class="footer-details">
+                <div class="detail-item">
+                    <span>Grupo:</span>
+                    5to Sección B
+                </div>
+                <div class="detail-item">
+                    <span>Materia:</span>
+                    Programación
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enter Screen -->
+    <div class="enter-screen" id="enter-screen" role="dialog" aria-label="Pantalla de bienvenida">
+        <video class="enter-video" id="enter-video" autoplay muted loop playsinline preload="auto">
+            <source src="media/videoinicio.mp4" type="video/mp4">
+        </video>
+        <div class="enter-overlay"></div>
+        <div class="hero-badge">Un movimiento del CBTis 159</div>
+        <h1 class="hero-title">Guardianes del <br>Cubaplaneta</h1>
+        <p>Esta página incluye música de fondo. Puedes pausarla cuando quieras con el botón de la esquina.</p>
+        <button class="btn-primary enter-btn" id="enter-btn" type="button">Entrar ↗</button>
+    </div>
+    <noscript><style>.enter-screen { display: none; }</style></noscript>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="media/backgroundmusic.mp3" type="audio/mpeg">
+    </audio>
+    <button class="music-toggle" id="music-toggle" type="button" aria-label="Activar música de fondo" aria-pressed="false">
+        <span class="music-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="music-label" id="music-label">Música</span>
+    </button>
+
+    <script>
+        // --- Performance: Video Management ---
+        const videoHero = document.getElementById('video-hero');
+
+        const particleBox = document.getElementById('particle-container');
+        const enterScreenEl = document.getElementById('enter-screen');
+
+        function enterScreenOpen() {
+            return enterScreenEl && !enterScreenEl.dataset.closed;
+        }
+
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const video = entry.target;
+                if (video === videoHero && particleBox) {
+                    particleBox.classList.toggle('paused', !entry.isIntersecting);
+                }
+                // Mientras la pantalla de bienvenida está abierta, el resto de videos espera
+                if (entry.isIntersecting && !enterScreenOpen()) {
+                    video.play().catch(() => {});
+                } else {
+                    video.pause();
+                }
+            });
+        }, { threshold: 0.1 });
+
+        // Se llama al cerrar la bienvenida para arrancar los videos que ya están a la vista
+        function syncVideos() {
+            [videoHero].forEach(video => {
+                const r = video.getBoundingClientRect();
+                const visible = r.bottom > 0 && r.top < window.innerHeight;
+                if (visible && !enterScreenOpen()) {
+                    video.play().catch(() => {});
+                } else {
+                    video.pause();
+                }
+            });
+        }
+
+        videoObserver.observe(videoHero);
+
+        // --- Particles Background ---
+        function createParticles() {
+            const container = document.getElementById('particle-container');
+            if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            const particleCount = window.matchMedia('(max-width: 768px)').matches ? 15 : 30;
+            for (let i = 0; i < particleCount; i++) {
+                const p = document.createElement('div');
+                p.classList.add('particle');
+                const size = Math.random() * 4 + 2 + 'px';
+                p.style.width = size;
+                p.style.height = size;
+                p.style.left = Math.random() * 100 + 'vw';
+                p.style.animationDuration = Math.random() * 10 + 10 + 's';
+                p.style.animationDelay = Math.random() * 10 + 's';
+                container.appendChild(p);
+            }
+        }
+        createParticles();
+
+        // --- Navigation Indicator & Smooth Scroll ---
+        const navPill = document.getElementById('nav-pill');
+        const indicator = document.getElementById('nav-indicator');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function moveIndicator(element) {
+            if (!element) return;
+            indicator.style.width = `${element.offsetWidth}px`;
+            indicator.style.left = `${element.offsetLeft}px`;
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            moveIndicator(document.querySelector('.nav-link'));
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                moveIndicator(e.target);
+            });
+        });
+
+        const logoHome = document.getElementById('logo-home');
+        if (logoHome) {
+            logoHome.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'auto' }); // usa el scroll suave del CSS
+                moveIndicator(document.querySelector('.nav-link'));
+            });
+        }
+
+        const sectionList = Array.from(document.querySelectorAll('section'));
+        let scrollTicking = false;
+        let lastCurrent;
+
+        function updateActiveLink() {
+            let current = '';
+            sectionList.forEach(section => {
+                if (window.pageYOffset >= section.offsetTop - 120) {
+                    current = section.getAttribute('id');
+                }
+            });
+            if (current === lastCurrent) return;
+            lastCurrent = current;
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                    moveIndicator(link);
+                }
+            });
+        }
+
+        function requestActiveUpdate() {
+            if (scrollTicking) return;
+            scrollTicking = true;
+            requestAnimationFrame(() => {
+                scrollTicking = false;
+                updateActiveLink();
+            });
+        }
+
+        window.addEventListener('scroll', requestActiveUpdate, { passive: true });
+        window.addEventListener('resize', () => { lastCurrent = undefined; requestActiveUpdate(); });
+
+        // --- Scroll Reveal ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                    if (entry.target.querySelector('.counter')) {
+                        startCounters(entry.target);
+                    }
+                }
+            });
+        }, { threshold: 0.2 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // --- Number Counters ---
+        function startCounters(section) {
+            const counters = section.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const countUp = () => {
+                    const current = +counter.innerText;
+                    const increment = target / 50;
+                    if (current < target) {
+                        counter.innerText = Math.ceil(current + increment);
+                        setTimeout(countUp, 30);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                countUp();
+            });
+        }
+
+        // --- Quiz Logic & Mascot ---
+        const quizData = [
+            {
+                q: "¿Cuál de estas es una de las 'R' fundamentales?",
+                o: ["Reemplazar", "Reciclar", "Reorganizar", "Recoger"],
+                a: 1
+            },
+            {
+                q: "¿En qué contenedor va el papel y cartón?",
+                o: ["Verde", "Amarillo", "Azul", "Gris"],
+                a: 2
+            },
+            {
+                q: "¿Cuánto tarda aproximadamente una botella de plástico en degradarse?",
+                o: ["10 años", "100 años", "450 años", "10,000 años"],
+                a: 2
+            },
+            {
+                q: "¿Qué material es el más lento en degradarse?",
+                o: ["Aluminio", "Papel", "Plástico", "Vidrio"],
+                a: 3
+            },
+            {
+                q: "¿Cuál es el primer paso recomendado antes de reciclar un envase?",
+                o: ["Pintarlo", "Limpiarlo y secarlo", "Cortarlo en trozos", "Quitarle la etiqueta"],
+                a: 1
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+        const results = []; // true/false por cada pregunta respondida
+        const LETTERS = ['A', 'B', 'C', 'D'];
+        const quizBar = document.getElementById('quiz-bar');
+        const quizStep = document.getElementById('quiz-step');
+        const quizScoreEl = document.getElementById('quiz-score');
+        const quizFeedback = document.getElementById('quiz-feedback');
+        const cubyBox = document.getElementById('cuby-container');
+
+        function replayAnimation(el) {
+            el.classList.remove('enter');
+            void el.offsetWidth; // reinicia la animación
+            el.classList.add('enter');
+        }
+
+        function renderProgress() {
+            quizBar.innerHTML = '';
+            quizData.forEach((_, i) => {
+                const seg = document.createElement('span');
+                seg.className = 'quiz-seg';
+                if (i < results.length) {
+                    seg.classList.add(results[i] ? 'ok' : 'fail');
+                } else if (i === currentQuestion) {
+                    seg.classList.add('current');
+                }
+                quizBar.appendChild(seg);
+            });
+            quizStep.textContent = currentQuestion < quizData.length
+                ? `Pregunta ${currentQuestion + 1} de ${quizData.length}`
+                : 'Quiz completado';
+            quizScoreEl.textContent = `Aciertos: ${score}`;
+        }
+
+        function updateMascot(state) {
+            const mouth = document.getElementById('cuby-mouth');
+            const eyes = document.querySelectorAll('.eye');
+
+            cubyBox.classList.remove('bounce', 'shake');
+            void cubyBox.offsetWidth;
+
+            if(state === 'correct') {
+                mouth.setAttribute('d', 'M45 65Q50 75 55 65'); // Smile
+                eyes.forEach(e => e.setAttribute('r', '5'));
+                cubyBox.classList.add('bounce');
+            } else if(state === 'wrong') {
+                mouth.setAttribute('d', 'M45 65Q50 55 55 65'); // Frown
+                eyes.forEach(e => e.setAttribute('r', '3'));
+                cubyBox.classList.add('shake');
+            } else {
+                mouth.setAttribute('d', 'M45 60Q50 65 55 60'); // Neutral
+                eyes.forEach(e => e.setAttribute('r', '4'));
+            }
+        }
+
+        function loadQuestion() {
+            updateMascot('neutral');
+            const q = quizData[currentQuestion];
+            document.getElementById('question').innerText = q.q;
+            quizFeedback.textContent = '';
+            quizFeedback.className = 'quiz-feedback';
+            const optionsDiv = document.getElementById('options');
+            optionsDiv.innerHTML = '';
+
+            q.o.forEach((option, index) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.classList.add('option-btn');
+                btn.innerHTML = '<span class="opt-key"></span><span class="opt-text"></span><span class="opt-icon"></span>';
+                btn.querySelector('.opt-key').textContent = LETTERS[index];
+                btn.querySelector('.opt-text').textContent = option;
+                btn.onclick = () => checkAnswer(index, btn);
+                optionsDiv.appendChild(btn);
+            });
+
+            renderProgress();
+            replayAnimation(document.getElementById('quiz-game'));
+        }
+
+        function checkAnswer(index, btn) {
+            const q = quizData[currentQuestion];
+            const correct = q.a;
+            const allBtns = document.querySelectorAll('.option-btn');
+
+            allBtns.forEach(b => b.classList.add('locked'));
+
+            const isRight = index === correct;
+            results.push(isRight);
+
+            if (isRight) {
+                btn.classList.add('correct');
+                score++;
+                updateMascot('correct');
+                quizFeedback.textContent = '¡Correcto!';
+                quizFeedback.className = 'quiz-feedback ok';
+            } else {
+                btn.classList.add('wrong');
+                allBtns[correct].classList.add('correct');
+                updateMascot('wrong');
+                quizFeedback.textContent = `Casi. La respuesta correcta es: ${q.o[correct]}`;
+                quizFeedback.className = 'quiz-feedback fail';
+            }
+
+            allBtns.forEach((b, i) => {
+                if (i !== index && i !== correct) b.classList.add('dim');
+            });
+
+            renderProgress();
+
+            setTimeout(() => {
+                currentQuestion++;
+                if (currentQuestion < quizData.length) {
+                    loadQuestion();
+                } else {
+                    showResult();
+                }
+            }, 1700);
+        }
+
+        function showResult() {
+            document.getElementById('quiz-game').style.display = 'none';
+            const resultDiv = document.getElementById('quiz-result');
+            resultDiv.style.display = 'block';
+            replayAnimation(resultDiv);
+
+            const total = quizData.length;
+            let title;
+            if (score === total) title = '¡Guardián perfecto!';
+            else if (score >= total - 1) title = '¡Excelente guardián!';
+            else if (score >= 3) title = '¡Buen trabajo!';
+            else title = '¡Sigue aprendiendo!';
+
+            document.getElementById('score-num').textContent = score;
+            document.getElementById('score-total').textContent = `/${total}`;
+            document.getElementById('score-text').textContent = title;
+            document.getElementById('score-detail').innerText = `Has respondido correctamente ${score} de ${total} preguntas.`;
+            updateMascot(score > 3 ? 'correct' : 'wrong');
+            renderProgress();
+        }
+
+        function restartQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            results.length = 0;
+            document.getElementById('quiz-game').style.display = 'block';
+            document.getElementById('quiz-result').style.display = 'none';
+            loadQuestion();
+        }
+
+        loadQuestion();
+
+        // --- Team Gallery Dynamic Loading ---
+        const gallery = document.getElementById('team-gallery');
+        const teamPhotos = [
+            { src: 'img/equipo-1.jpg', caption: 'Acciones en el plantel' },
+            { src: 'img/equipo-2.jpg', caption: 'Cuidando el futuro' },
+            { src: 'img/equipo-3.jpg', caption: 'Manos a la obra' },
+            { src: 'img/equipo-4.jpg', caption: 'Guardianes del Cubaplaneta' },
+        ];
+
+        const existingPhotos = [];
+        teamPhotos.forEach(photo => {
+            const img = new Image();
+            img.src = photo.src;
+            img.onload = () => existingPhotos.push(photo);
+            img.onerror = () => {};
+        });
+
+        setTimeout(() => {
+            if (existingPhotos.length === 0) {
+                gallery.style.display = 'none';
+            } else {
+                existingPhotos.forEach(photo => {
+                    const item = document.createElement('div');
+                    item.classList.add('gallery-item');
+                    item.innerHTML = `
+                        <div class="img-frame" style="height: 200px;">
+                            <img src="${photo.src}" alt="Foto equipo" loading="lazy" decoding="async">
+                        </div>
+                        <p class="gallery-caption">${photo.caption}</p>
+                    `;
+                    gallery.appendChild(item);
+                });
+            }
+        }, 500);
+
+
+        // --- Background Music ---
+        (function () {
+            const music = document.getElementById('bg-music');
+            const toggle = document.getElementById('music-toggle');
+            const label = document.getElementById('music-label');
+            if (!music || !toggle) return;
+
+            music.volume = 0.35;
+
+            let userPaused = false; // true si la persona pausó manualmente
+
+            function setUI(playing) {
+                toggle.classList.toggle('playing', playing);
+                toggle.setAttribute('aria-pressed', String(playing));
+                toggle.setAttribute('aria-label', playing ? 'Pausar música de fondo' : 'Activar música de fondo');
+                label.textContent = playing ? 'Pausar' : 'Música';
+            }
+
+            function play() {
+                return music.play().then(() => setUI(true)).catch(() => setUI(false));
+            }
+
+            // Los navegadores bloquean el audio automático: se intenta al cargar
+            // y, si falla, arranca con la primera interacción de la persona.
+            const unlockEvents = ['click', 'pointerup', 'keydown', 'touchend'];
+            function unlock() {
+                if (userPaused) return;
+                play().then(() => {
+                    if (!music.paused) {
+                        unlockEvents.forEach(ev => window.removeEventListener(ev, unlock));
+                        hideEnterScreen();
+                    }
+                });
+            }
+            unlockEvents.forEach(ev => window.addEventListener(ev, unlock, { passive: true }));
+
+            // Pantalla de bienvenida: el clic en "Entrar" autoriza el audio
+            const enterScreen = document.getElementById('enter-screen');
+            const enterBtn = document.getElementById('enter-btn');
+
+            function hideEnterScreen() {
+                if (!enterScreen || enterScreen.dataset.closed) return;
+                enterScreen.dataset.closed = '1';
+                enterScreen.classList.add('hide');
+                if (typeof syncVideos === 'function') syncVideos();
+                document.body.style.overflow = '';
+                setTimeout(() => {
+                    enterScreen.style.display = 'none';
+                    const enterVideo = document.getElementById('enter-video');
+                    if (enterVideo) enterVideo.pause();
+                }, 700);
+            }
+
+            if (enterScreen) {
+                document.body.style.overflow = 'hidden';
+                if (enterBtn) {
+                    enterBtn.focus();
+                    enterBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        userPaused = false;
+                        play();
+                        hideEnterScreen();
+                    });
+                }
+            }
+
+            // Si el navegador ya permite audio automático, se omite la pantalla
+            music.play().then(() => { setUI(true); hideEnterScreen(); }).catch(() => setUI(false));
+
+            toggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (music.paused) {
+                    userPaused = false;
+                    play();
+                } else {
+                    userPaused = true;
+                    music.pause();
+                    setUI(false);
+                }
+            });
+
+            // Pausa al cambiar de pestaña y reanuda al volver
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) {
+                    if (!music.paused) { music.pause(); music.dataset.autoPaused = '1'; }
+                } else if (music.dataset.autoPaused === '1' && !userPaused) {
+                    delete music.dataset.autoPaused;
+                    play();
+                }
+            });
+        })();
+
+
+        // --- Mobile Menu ---
+        (function () {
+            const btn = document.getElementById('menu-toggle');
+            const menu = document.getElementById('nav-pill');
+            if (!btn || !menu) return;
+
+            function setMenu(open) {
+                menu.classList.toggle('open', open);
+                btn.classList.toggle('open', open);
+                btn.setAttribute('aria-expanded', String(open));
+                btn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+            }
+
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                setMenu(!menu.classList.contains('open'));
+            });
+
+            // Cierra al elegir una sección, al tocar fuera o con Escape
+            menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+            document.addEventListener('click', (e) => {
+                if (!menu.contains(e.target) && !btn.contains(e.target)) setMenu(false);
+            });
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+            window.addEventListener('resize', () => { if (window.innerWidth > 768) setMenu(false); });
+        })();
+
+    </script>
+</body>
+</html>
